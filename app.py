@@ -42,7 +42,7 @@ async def main(db_url):
 
 
 start = time.time()
-PG_DSN = 'postgresql://admin:1234@127.0.0.1:5000/asyncio'
+PG_DSN = 'postgresql://admin:1234@127.0.0.1:5432/asyncio'
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main(PG_DSN))
 print('working time', time.time() - start)
